@@ -1,0 +1,47 @@
+<div data-role='page' id="menuItemPage">
+	<div data-role='header' class='itemPage__header'>
+		<h1 class='ui-title-left'>{{currencyItem.name}}</h1>
+		<a href="#cartPage" class='ui-btn-right btn-cart'>
+			<img src="../img/shopping-cart.png" alt="">
+			<p>{{countCart}}</p>
+		</a>
+	</div>
+	<div data-role='main' class='ui-content'>
+		<div class="item-top row">
+			<img src="img/{{currencyItem.image}}" alt="">
+			<p>{{itemCurrency + currencyItem.price}}</p>
+		</div>
+		<div class="discription row">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem adipisci iste aliquam rem recusandae itaque possimus cupiditate a? Optio, vero. Atque odit sequi fuga! Aperiam rerum quisquam ut maiores tempore.
+		</div>
+		<ul class='countItem clearfix'>
+			<li ng-class='{active: selectItem(1)}' ng-click='amoutItem(1)'>1</li>
+			<li ng-class='{active: selectItem(2)}' ng-click='amoutItem(2)'>2</li>
+			<li ng-class='{active: selectItem(3)}' ng-click='amoutItem(3)'>3</li>
+			<li ng-class='{active: selectItem(4)}' ng-click='amoutItem(4)'>4</li>
+			<li ng-class='{active: selectItem(5)}' ng-click='amoutItem(5)'>5</li>
+		</ul>
+		<br>
+		<div class="modifires-select">
+			<multiple-select-widget></multiple-select-widget>
+		</div>
+		<div class="btn-controls">
+			<div class="btn-edit row">
+				<div class="col-sm-6">
+					<button class='btn btn-warning' ng-click='removeMenu()' ng-show='itemStatus == "edit"'>Remove</button>
+				</div>
+				<div class="col-sm-6">
+					<button class='btn btn-warning' ng-click='saveMenu()' ng-show='itemStatus == "edit"'>Save</button>
+				</div>
+			</div>
+			<div class="btn-new row">
+				<div class="col-xs-6">
+					<a href='#mainPage' class='btn btn-warning' ng-show='itemStatus == "new"'>Cancel</a>
+				</div>
+				<div class="col-xs-6">
+					<button class='btn btn-warning' ng-click='addMenu()' ng-show='itemStatus == "new"'>+ Add to cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

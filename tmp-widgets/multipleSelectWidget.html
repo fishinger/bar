@@ -1,0 +1,4 @@
+<select name="select-modif" id="select-modif" multiple='multiple' data-native-menu='false'>
+	<option value="">Select modivire</option>
+	<option ng-repeat='mode in currencyItem.modifiers' value="{{$index}}">{{mode.name}} {{itemCurrency + mode.price}}</option>
+</select>

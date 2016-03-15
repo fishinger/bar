@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.listMenu li {
+  list-style: none;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.listMenu li img {
+  width: 100%;
+}
+.listMenu li h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+  font-size: 1.5em;
+}
+.listMenu li p {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.btn.btn-warning:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: 0 none;
+}
+
+a.btn.btn-warning {
+  margin-top: 7px;
+  font-weight: normal;
+  width: 100%;
+}
+
+.ui-content {
+  padding-top: 0;
+}
+
+.itemPage__header,
+.ui-header .ui-title,
+.ui-footer .ui-title {
+  padding: 9px;
+  font-size: 1.3em;
+}
+.itemPage__header .btn-cart,
+.ui-header .ui-title .btn-cart,
+.ui-footer .ui-title .btn-cart {
+  margin-top: 5px;
+  padding-left: 2px;
+}
+.itemPage__header .btn-cart p,
+.ui-header .ui-title .btn-cart p,
+.ui-footer .ui-title .btn-cart p {
+  float: left;
+  padding: 2px 6px;
+  background: #f0ad4e;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  left: 4px;
+  top: -4px;
+}
+
+.item-top {
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.item-top img {
+  width: 100%;
+}
+.item-top p {
+  position: absolute;
+  bottom: 20px;
+  right: 5px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.discription {
+  padding: 20px;
+  line-heighat: 1.2;
+}
+
+.countItem li {
+  float: left;
+  padding: 4px 7px;
+  font-size: 1.2em;
+  border: 2px solid #ed9c28;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.countItem li.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#C0C0C0), to(#DADADA));
+  background: -webkit-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: -moz-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: -o-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  border: 2px solid #A2A2A2;
+}
+.countItem li:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#C0C0C0), to(#DADADA));
+  background: -webkit-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: -moz-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: -o-linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  background: linear-gradient(bottom, #C0C0C0 0%, #DADADA 100%);
+  border: 2px solid #A2A2A2;
+}
+
+.cartList .cart-item {
+  border-bottom: 1px dashed #e9e9e9;
+  padding: 12px 0;
+}
+.cartList h3 {
+  float: left;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.cartList .cart-item-wrap {
+  margin-bottom: 10px;
+}
+.cartList .item-edit {
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.cartList .item-price {
+  float: right;
+}
+.cartList .cart-item-modif p {
+  padding: 5px 20px;
+}
+.cartList .cart-item-modif .modif-name {
+  float: left;
+  margin-left: 10px;
+}
+.cartList .cart-item-modif .modif-price {
+  float: right;
+  padding-right: 32px;
+  margin-top: 10px;
+}
+
+.items-amout {
+  margin-top: 10px;
+  padding: 12px 10px;
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 1.3em;
+  background: #fff;
+}
